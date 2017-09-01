@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -27,8 +27,11 @@ requirements:
     - pygments
 
 test:
-  imports:
-    - pdb
+  # pdbpp replaces built-in pdb module and makes it available as pdb.pdb
+  # if pdbpp was properly dropped in as pdb replacement the following import should work
+  # on the other hand the built-in pdb does not have pdb.pdb
+  commands:
+    - python -c "from pdb import pdb"
 
 about:
   home: http://github.com/antocuni/pdb
