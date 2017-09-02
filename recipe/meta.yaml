@@ -39,7 +39,6 @@ about:
   license_family: BSD
   summary: 'pdb++, a drop-in replacement for pdb'
 
-  # The remaining entries in this section are optional, but recommended
   description: |
       This module is an extension of the pdb module of the standard library.
       It is meant to be fully compatible with its predecessor, yet it introduces
@@ -50,3 +49,4 @@ extra:
   recipe-maintainers:
     - sodre
     - kynan
+    - megies
