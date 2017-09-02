@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -27,8 +27,11 @@ requirements:
     - pygments
 
 test:
-  imports:
-    - pdb
+  # pdbpp replaces built-in pdb module and makes it available as pdb.pdb
+  # if pdbpp was properly dropped in as pdb replacement the following import should work
+  # on the other hand the built-in pdb does not have pdb.pdb
+  commands:
+    - python -c "from pdb import pdb"
 
 about:
   home: http://github.com/antocuni/pdb
@@ -36,7 +39,6 @@ about:
   license_family: BSD
   summary: 'pdb++, a drop-in replacement for pdb'
 
-  # The remaining entries in this section are optional, but recommended
   description: |
       This module is an extension of the pdb module of the standard library.
       It is meant to be fully compatible with its predecessor, yet it introduces
@@ -47,3 +49,4 @@ extra:
   recipe-maintainers:
     - sodre
     - kynan
+    - megies
