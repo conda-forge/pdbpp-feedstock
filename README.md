@@ -17,14 +17,15 @@ a number of new features to make your debugging experience as nice as possible.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pdbpp-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pdbpp-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pdbpp-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pdbpp-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pdbpp-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pdbpp-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pdbpp-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pdbpp-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pdbpp/badges/version.svg)](https://anaconda.org/conda-forge/pdbpp)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pdbpp/badges/downloads.svg)](https://anaconda.org/conda-forge/pdbpp)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pdbpp-green.svg)](https://anaconda.org/conda-forge/pdbpp) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pdbpp.svg)](https://anaconda.org/conda-forge/pdbpp) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pdbpp.svg)](https://anaconda.org/conda-forge/pdbpp) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pdbpp.svg)](https://anaconda.org/conda-forge/pdbpp) |
 
 Installing pdbpp
 ================
