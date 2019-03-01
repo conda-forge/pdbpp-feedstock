@@ -1,6 +1,6 @@
 {% set name = "pdbpp" %}
-{% set version = "0.9.6" %}
-{% set sha256 = "438bb2c885e40e9dcf649d9b598e4fe30fd1e3558c89a6ad3f447a9839a04e9f" %}
+{% set version = "0.9.7" %}
+{% set sha256 = "0c40ffc5cfdd262f2a22ea6209a6f7aa3266f4e297a1c7af3c1b3e185fecd341" %}
 
 package:
   name: {{ name|lower }}
