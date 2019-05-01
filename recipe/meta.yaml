@@ -32,7 +32,7 @@ requirements:
 test:
   # pdbpp replaces built-in pdb module and makes it available as pdb.pdb
   # if pdbpp was properly dropped in as pdb replacement the following import should work
-  # on the other hand the built-in pdb does not have pdb.pdb
+  # on the other hand the built-in pdb does not have pdb.pdb 
   commands:
     - python -c "from pdb import pdb"
 
