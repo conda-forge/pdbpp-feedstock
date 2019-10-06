@@ -49,6 +49,7 @@ about:
   home: http://github.com/pdbpp/pdbpp
   license: BSD 3-Clause
   license_family: BSD
+  license_file: LICENSE.txt
   summary: 'pdb++, a drop-in replacement for pdb'
 
   description: |
