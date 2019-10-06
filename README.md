@@ -1,7 +1,7 @@
 About pdbpp
 ===========
 
-Home: http://github.com/antocuni/pdb
+Home: http://github.com/pdbpp/pdbpp
 
 Package license: BSD 3-Clause
 
