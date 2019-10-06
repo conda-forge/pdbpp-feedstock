@@ -26,7 +26,6 @@ requirements:
     - python
     - fancycompleter >=0.8
     - pygments
-    - six
     - wmctrl
     # Optional, but with no version constraints
     # - funcsigs
