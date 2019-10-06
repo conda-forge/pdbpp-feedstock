@@ -1,6 +1,5 @@
 {% set name = "pdbpp" %}
 {% set version = "0.10.2" %}
-{% set sha256 = "73ff220d5006e0ecdc3e2705d8328d8aa5ac27fef95cc06f6e42cd7d22d55eb8" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 73ff220d5006e0ecdc3e2705d8328d8aa5ac27fef95cc06f6e42cd7d22d55eb8
 
 build:
   noarch: python
@@ -25,10 +24,13 @@ requirements:
     - setuptools_scm
   run:
     - python
-    - fancycompleter
-    - wmctrl
+    - fancycompleter >=0.8
     - pygments
-
+    - six
+    - wmctrl
+    # Optional, but with no version constraints
+    # - funcsigs
+    
 test:
   # pdbpp replaces built-in pdb module and makes it available as pdb.pdb
   # if pdbpp was properly dropped in as pdb replacement the following import should work
@@ -37,7 +39,7 @@ test:
     - python -c "from pdb import pdb"
 
 about:
-  home: http://github.com/antocuni/pdb
+  home: http://github.com/pdbpp/pdbpp
   license: BSD 3-Clause
   license_family: BSD
   summary: 'pdb++, a drop-in replacement for pdb'
@@ -46,7 +48,7 @@ about:
       This module is an extension of the pdb module of the standard library.
       It is meant to be fully compatible with its predecessor, yet it introduces
       a number of new features to make your debugging experience as nice as possible.
-  dev_url: http://github.com/antocuni/pdb
+  dev_url: http://github.com/pdbpp/pdbpp
 
 extra:
   recipe-maintainers:
