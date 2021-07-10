@@ -1,6 +1,6 @@
 {% set name = "pdbpp" %}
-{% set version = "0.10.0" %}
-{% set sha256 = "ee7eab02ecf32d92bd66b45eedb9bda152fa13f7be0dceb7050413a52cbbc4dd" %}
+{% set version = "0.10.3" %}
+{% set sha256 = "d9e43f4fda388eeb365f2887f4e7b66ac09dce9b6236b76f63616530e2f669f5" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
 requirements:
@@ -39,13 +39,14 @@ test:
 about:
   home: http://github.com/antocuni/pdb
   license: BSD 3-Clause
+  license_file: LICENSE.txt
   license_family: BSD
-  summary: 'pdb++, a drop-in replacement for pdb'
+  summary: pdb++, a drop-in replacement for pdb
 
   description: |
-      This module is an extension of the pdb module of the standard library.
-      It is meant to be fully compatible with its predecessor, yet it introduces
-      a number of new features to make your debugging experience as nice as possible.
+    This module is an extension of the pdb module of the standard library.
+    It is meant to be fully compatible with its predecessor, yet it introduces
+    a number of new features to make your debugging experience as nice as possible.
   dev_url: http://github.com/antocuni/pdb
 
 extra:
