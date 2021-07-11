@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.4
     - setuptools
     - setuptools_scm
   run:
-    - python
+    - python >=3.4
     - fancycompleter
     - wmctrl
     - pygments
@@ -38,7 +38,7 @@ test:
 
 about:
   home: http://github.com/antocuni/pdb
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   license_family: BSD
   summary: pdb++, a drop-in replacement for pdb
