@@ -8,23 +8,23 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
 requirements:
   host:
     - pip
-    - python >=3.4
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.4
+    - python >={{ python_min }}
     - fancycompleter
     - wmctrl
     - pygments
@@ -33,6 +33,8 @@ test:
   # pdbpp replaces built-in pdb module and makes it available as pdb.pdb
   # if pdbpp was properly dropped in as pdb replacement the following import should work
   # on the other hand the built-in pdb does not have pdb.pdb 
+  requires:
+    - python {{ python_min }}
   commands:
     - python -c "from pdb import pdb"
 
