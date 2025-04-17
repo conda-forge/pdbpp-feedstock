@@ -39,7 +39,7 @@ test:
     - python -c "from pdb import pdb"
 
 about:
-  home: http://github.com/antocuni/pdb
+  home: https://pypi.org/project/pdbpp/
   license: BSD-3-Clause
   license_file: LICENSE.txt
   license_family: BSD
@@ -49,7 +49,7 @@ about:
     This module is an extension of the pdb module of the standard library.
     It is meant to be fully compatible with its predecessor, yet it introduces
     a number of new features to make your debugging experience as nice as possible.
-  dev_url: http://github.com/antocuni/pdb
+  dev_url: https://github.com/pdbpp/pdbpp
 
 extra:
   recipe-maintainers:
