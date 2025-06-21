@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
@@ -25,7 +25,7 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - fancycompleter
+    - fancycompleter >=0.11.0
     - wmctrl
     - pygments
 
@@ -49,7 +49,7 @@ about:
     This module is an extension of the pdb module of the standard library.
     It is meant to be fully compatible with its predecessor, yet it introduces
     a number of new features to make your debugging experience as nice as possible.
-  dev_url: https://github.com/pdbpp/pdbpp
+  dev_url: https://github.com/bretello/pdbpp
 
 extra:
   recipe-maintainers:
