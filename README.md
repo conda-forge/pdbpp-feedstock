@@ -3,13 +3,13 @@ About pdbpp-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdbpp-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/antocuni/pdb
+Home: https://pypi.org/project/pdbpp/
 
 Package license: BSD-3-Clause
 
 Summary: pdb++, a drop-in replacement for pdb
 
-Development: http://github.com/antocuni/pdb
+Development: https://github.com/bretello/pdbpp
 
 This module is an extension of the pdb module of the standard library.
 It is meant to be fully compatible with its predecessor, yet it introduces

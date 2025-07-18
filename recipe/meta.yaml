@@ -1,6 +1,6 @@
 {% set name = "pdbpp" %}
-{% set version = "0.11.6" %}
-{% set sha256 = "36a73c5bcf0c3c35034be4cf99e6106e3ee0c8f5e0faafc2cf9be5f1481eb4b7" %}
+{% set version = "0.11.7" %}
+{% set sha256 = "cb6604ac31a35ed0f2a29650a8c022b26284620be3e01cfd41b683b91da1ff14" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
